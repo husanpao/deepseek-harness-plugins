@@ -43,6 +43,15 @@ the text contains a newline, so the detail lines are what keep the rest reachabl
 Warnings are rendered in the interface language rather than repeating the tool
 result's English wording.
 
+The command's own menu description and input hint are **written in Chinese on
+purpose**. The `/` menu localizes only the six built-in commands, from a table the
+client owns, and shows every other command's Host-supplied `description` verbatim —
+so writing it in the interface language is the only way a third-party command gets
+a Chinese menu entry. A custom menu icon is not reachable either: the client keys
+icons off that same built-in table, `commandUi.decorate()` attaches only a
+bare-invocation UI spec rather than a face, and a `commandUi.register()`
+contribution may not reuse a Host command's name.
+
 Its input is a **path, not an attachment**. `@` is a *file reference*: the
 composer's completion inserts plain text, and the reference contract given to the
 model says relative paths resolve from the workspace root. The command follows

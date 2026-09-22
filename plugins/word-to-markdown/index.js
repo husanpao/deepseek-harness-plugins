@@ -479,9 +479,13 @@ function warningText(warning) {
 function registerCommand(ctx, settings) {
   ctx.commands.register({
     name: COMMAND_NAME,
-    description: 'Convert a Word document (.docx) into Markdown, extracting its images, into the workspace docs folder.',
+    /* The `/` menu shows this string verbatim: the client localizes only the six
+     * built-in commands, from its own hardcoded table, and falls back to the Host
+     * description for every other row. Writing it in the interface language is the
+     * only way a third-party command gets a Chinese menu entry. */
+    description: '把 Word 文档转成 Markdown 并提取图片，输出到工作区 docs/',
     input: {
-      hint: '@/path/to/file.docx [输出目录]',
+      hint: '@文件.docx [输出目录]',
     },
     async handler(invocation) {
       const { agent, rawInput } = invocation
