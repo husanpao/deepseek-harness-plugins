@@ -13,6 +13,7 @@ may additionally declare `dsh.client` to run code in the Web page.
 | Plugin | What it does | Profile | Dependencies |
 |---|---|---|---|
 | [`right-click-row-menu`](plugins/right-click-row-menu/README.md) | Right-click a Workspace or Session row in the sidebar to open its "..." menu, instead of hovering and clicking the ellipsis icon. | `web` | none |
+| [`word-to-markdown`](plugins/word-to-markdown/README.md) | Converts a Word `.docx` into Markdown, extracting its embedded images as `![](path)`: a `word_to_markdown` tool for the agent, and a `/word2md` slash command that takes an `@`-referenced path and writes into the workspace `docs/` folder. | `web` | pandoc on the Host |
 
 ## Install
 

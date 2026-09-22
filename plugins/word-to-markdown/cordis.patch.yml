@@ -1,0 +1,15 @@
+# Bundle patch: one Host row. The whole feature is the `word_to_markdown` tool
+# this package registers on the shared tool registry.
+#
+# Optional row configuration (all fields optional; defaults shown):
+#   config:
+#     pandocPath: null          # explicit pandoc executable; otherwise PATH and
+#                               # the usual install locations are searched
+#     format: gfm               # gfm | markdown | gfm-raw_html
+#     mediaDir: media           # folder name for extracted images, beside the .md
+#     wrap: none                # none | auto (pandoc --wrap)
+#     stripImageAttributes: true # drop pandoc's {width=...} after image links
+#     timeoutMs: 180000         # bound on one conversion
+- insert:
+    - id: word-to-markdown
+      name: '@local/dsh-word-to-markdown'

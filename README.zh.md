@@ -13,6 +13,7 @@ Harness profile。本仓库里的东西都是 bundle：`package.json` 里声明
 | 插件 | 作用 | Profile | 依赖 |
 |---|---|---|---|
 | [`right-click-row-menu`](plugins/right-click-row-menu/README.zh.md) | 在侧边栏的工作区/会话行上点右键即弹出该行"..."菜单，不必先悬停再点省略号图标。 | `web` | 无 |
+| [`word-to-markdown`](plugins/word-to-markdown/README.zh.md) | 把 Word `.docx` 转成 Markdown 并把内嵌图片提取为 `![](path)`：既有给 agent 用的 `word_to_markdown` 工具，也有 `/word2md` 指令——用 `@文件` 引用传入路径，直接写入工作区 `docs/`。 | `web` | Host 上需有 pandoc |
 
 ## 安装
 
