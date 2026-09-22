@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-right-click-row-menu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Opens the sidebar's Workspace and Session row menu on right-click.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml"
+  ]
+}

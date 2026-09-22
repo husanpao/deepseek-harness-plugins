@@ -1,0 +1,6 @@
+# Bundle patch: one Host row for this package. The Host half is inert; the
+# whole feature lives in the ./client half, which the client-module system
+# activates because this manifest declares `dsh.client`.
+- insert:
+    - id: right-click-row-menu
+      name: '@local/dsh-right-click-row-menu'

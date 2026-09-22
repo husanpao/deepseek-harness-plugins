@@ -1,0 +1,6 @@
+# Nothing tracked here is generated: a plugin's runtime files are its manifest,
+# patch, and entry bundles. Keep installs, logs, and editor debris out.
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
